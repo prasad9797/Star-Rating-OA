@@ -1,0 +1,9 @@
+<h2>Rating List</h2>
+@for(rating of ratingData; track rating.name){
+<app-rating-component
+  [name]="rating.name"
+  [rate]="rating.rate"
+  [content]="rating.content"
+/>
+
+}
